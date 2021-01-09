@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Example</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="CustomStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- let us say we want the 2 columns in the first row to be centered. To center the columns, we need to push the first column to the right by 3 columns. -->
+    <!-- This is exactly the purpose of bootstrap offset classes. Just like how we have different grid classes for different screen sizes, we have the corresponding offset classes as well. -->
+    <!-- The following HTML will center the 2 columns in the first row. This is achieved by using col-md-offset-3 which is going to push the first column in the first row by 3 columns.  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 offset-3">
+                <div class="customDiv">Column 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="customDiv">Column 2</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="customDiv">Column 1</div>
+            </div>
+            <div class="col-md-3">
+                <div class="customDiv">Column 2</div>
+            </div>
+            <div class="col-md-3">
+                <div class="customDiv">Column 3</div>
+            </div>
+            <div class="col-md-3">
+                <div class="customDiv">Column 4</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
